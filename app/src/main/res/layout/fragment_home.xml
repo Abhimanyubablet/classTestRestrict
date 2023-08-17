@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/product_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/product_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/first_product"
+            android:layout_width="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_head"
+            >
+            <ImageView
+                android:id="@+id/people_product"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/baseline_people_24"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="People Product"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:layout_below="@+id/people_product"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_product"
+            android:layout_width="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/first_product"
+            android:layout_below="@+id/product_head"
+            >
+            <ImageView
+                android:id="@+id/home_product"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/baseline_add_home_24"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Product"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:layout_below="@+id/home_product"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
